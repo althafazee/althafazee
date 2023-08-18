@@ -1,6 +1,7 @@
 - 👋 Hi, I’m @althafazee
 - 🧲 I’m interested in Data Analyst
-- 🧩 I’m currently learning Microsoft Excel.
+- 🧩 I’m currently learning sql
+- 
 - 
 
 <!---
