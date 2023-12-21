@@ -1,0 +1,294 @@
+/* Global Styles */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Arial', sans-serif;
+  list-style: none;
+  text-decoration: none;
+}
+
+/* Body Styles */
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  margin: 0;
+  background: url(https://img.freepik.com/premium-photo/dark-black-gray-blurred-gradient-leaf-shadow-background-has-little-abstract-light_532332-1850.jpg) no-repeat center center fixed; 
+-webkit-background-size: cover;
+-moz-background-size: cover;
+-o-background-size: cover;
+background-size: cover;
+}
+
+
+/* Info Container Styles */
+.info-container {
+  display: flex;
+  align-items: center;
+}
+
+.info-box {
+  /*background-color: #ffffff; /* Set the background color to white */
+  border-radius: 20px; /* Rounded corners for the box */
+  padding: 20px; /* Adds internal space around the content */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Adds a subtle shadow */
+  width: 100%; /* Makes the box span the entire width of its parent */
+  max-width: 600px; /* Sets a maximum width for the box */
+  color: #ffffff; /* Set the text color to white */
+  text-align: center; /* Center-aligns the text content */
+  position: absolute; /* Positions the box absolutely */
+  top: 40px; /* Sets the distance from the top of its containing element */
+  height: auto; /* Allows the box to adjust its height based on content */
+}
+
+
+
+
+
+/* Add a transition to the img element for smooth animation */
+/* Add a transition to the img element for smooth animation */
+.info-box img {
+  max-width: 150px;
+  border-radius: 50%;
+  border: 2px solid #c0c0c0;
+  transition: transform 0.3s ease-in-out;
+  position: relative;
+}
+
+/* Create a ::before pseudo-element for the brightness effect */
+.info-box img::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: rgba(255, 255, 255, 0.2); /* Adjust the opacity as needed */
+  border-radius: 50%;
+  transition: opacity 0.3s ease-in-out;
+  pointer-events: none;
+  z-index: -1;
+}
+
+/* Define the hover state and the transformation */
+.info-box img:hover {
+  transform: scale(1.1); /* You can adjust the scaling factor as needed */
+}
+
+/* Adjust the brightness on hover */
+.info-box img:hover::before {
+  opacity: 0; /* Fully hide the overlay on hover */
+}
+
+.info {
+  margin-left: 20px;
+}
+
+.name {
+  font-size: 28px;
+  font-weight: 600;
+  margin: 10px 0;
+  color: rgba(255, 255, 255, 0.8); /* Adjust the alpha value (0.7) to control text opacity */
+}
+
+.info-box h2 {
+  font-size: 24px;
+  font-weight: 500;
+  margin: -10px 0 3px 0;
+  color: rgba(204, 204, 204, 0.7); /* Adjust the alpha value (0.7) to control text opacity */
+}
+
+.info-box h3 {
+  font-size: 18px;
+  font-weight: 450;
+  margin: 15px 0 3px 0;
+  color: rgba(255, 255, 255, 0.8); /* Adjust the alpha value (0.7) to control text opacity */
+}
+
+/* Modify the social icons' size and margin */
+/* Modify the social icons' size and margin */
+/* Modify the social icons' size and margin */
+/* Modify the social icons' size and margin */
+.social-icon {
+  width: 33px;
+  height: 33px;
+  margin-right: 10px; /* Add some spacing between icons */
+  margin-top: 12px; /* Add margin to move the icons down */
+  transition: transform 0.3s ease; /* Add a transition for smooth animation */
+}
+
+/* Apply a scale transform on hover to create the zoom-out effect */
+.social-icon:hover {
+  transform: scale(0.9); /* Zoom out the icon on hover */
+}
+.hai {
+  padding: 10px;
+  text-align: center; /* Align the text within .hai to the center horizontally */
+  margin-top: 20px; /* Move the content down by 20 pixels */
+  display: flex;
+  flex-direction: column; /* Stack content vertically */
+  justify-content: center; /* Center content vertically within .hai */
+  align-items: center; /* Center content horizontally within .hai */
+}
+
+
+.hai h2 {
+  font-size: 28px;
+  color: #ffffff;
+}
+
+.hai h3 {
+  font-size: 17px;
+  color: rgba(255, 255, 255, 0.8);
+  
+  margin-top: 10px; /* Adjust the top margin to move it down slightly */
+}
+
+
+
+/* Container for a row of skills */
+.skill-container-row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; /* Center-align items horizontally within the row */
+  align-items: center; /* Center-align items vertically within the row */
+  margin-top: 15px; /* Move the entire row down by 15 pixels */
+}
+
+
+
+/* Skill link styles */
+.skill-link {
+  display: block;
+  text-decoration: none;
+}
+
+/* Individual skill container */
+.skill-container {
+  width: 110px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  border-radius: 10px;
+  background-color: rgba(192, 192, 192, 0.2);
+  transition: background-color 0.3s ease;
+  margin-bottom: 10px; /* Add space between rows */
+  margin-left: auto; /* Automatically adjust the left margin based on available space */
+  margin-right: 5px; /* Add space between containers */
+}
+
+/* Hover effect for skill container */
+.skill-container:hover {
+  background-color: rgba(152, 152, 152, 0.6);
+}
+
+/* Skill container image */
+.skill-container img {
+  max-width: 44%;
+  max-height: 44%;
+  object-fit: cover;
+  margin-left: 10px;
+  border: none;
+}
+
+/* Skill container heading */
+.skill-container h3 {
+  font-size: 18px;
+  color: rgba(255, 255, 255, 0.8);
+  margin: 0 10px;
+  text-align: center;
+}
+
+
+.hey{
+  padding: 10px;
+  text-align: center;
+  margin-top: 20px; /* Move the content down by 20 pixels */
+  
+}
+
+
+.hey h2 {
+  font-size: 28px; /* Set the font size to 26 pixels */
+  color: #ffffff /* Set the text color to rgba(255, 255, 255, 0.8) */
+}
+
+.hey h3 {
+  font-size: 17px; /* Set the font size to 26 pixels */
+  color: rgba(255, 255, 255, 0.8); /* Set the text color to rgba(255, 255, 255, 0.8) */
+}
+/* Container for the entire row */
+/* Container for the entire row */
+/* Styles for the main container row */
+/* Center the project containers horizontally and vertically within the row */
+.helo-container-row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center; /* Center-align items vertically within the row */
+  margin-top: 20px;
+}
+
+/* Container for the project */
+.helo-container {
+  width: 450px;
+  height: 140px;
+  border-radius: 10px;
+  background-color: rgba(192, 192, 192, 0.2);
+  transition: background-color 0.3s ease;
+  margin: 10px;
+}
+
+/* Hover effect for the project container */
+.helo-container:hover {
+  background-color: rgba(152, 152, 152, 0.6);
+}
+
+
+/* Styles for the "View More Projects" link with the new class */
+.custom-link {
+  text-decoration: none;
+  color:  rgba(255, 255, 255, 0.8); /* Initial text color */
+  transition: color 0.3s ease, background-color 0.3s ease; /* Add color and background-color transition */
+  margin-top: 20px; /* Adjust the amount of space (e.g., 20px) */
+  margin-left: -270px; /* Adjust the amount of space (e.g., 10px) to move it left */
+}
+
+.custom-link:hover {
+  background-color: rgba(152, 152, 152, 0.6); /* Hover background color */
+  color:rgba(152, 152, 152, 0.6) ; /* Hover text color */
+}
+
+.contact-section {
+  text-align: center; /* Center-align text */
+  margin-top: 40px;
+}
+
+.gmail-link {
+  text-decoration: underline; /* Add underline to link */
+  color: #cccccc; /* Change the link color to #cccccc */
+  font-weight: bold;
+}
+.social-icons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px; /* Adjust margin-top to move it up */
+}
+
+.social-icons a {
+  margin: 0 10px;
+  text-decoration: none;
+  color: #cccccc;
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.social-icons a:hover {
+  color: #0056b3;
+  transform: translateY(5px) scale(0.95);
+}
+
+
+
